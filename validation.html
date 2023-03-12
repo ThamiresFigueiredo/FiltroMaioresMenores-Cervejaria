@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cervejaria Pericles</title>
+    <link rel="stylesheet" href="stylevalidation.css" type="text/css">
+    <script>
+        function validacao(opcao) {
+            if (opcao == 1) {
+                window.location.href = "comprasmaiores.html";
+            } else {
+                window.location.href = "comprasmenores.html"; 
+            }
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <h1>Bem-vindo<br>à Cervejaria do Pericles Delivery</h1>
+        <form> 
+            <img src="Assets/cervejinhas.png">
+            <label>Você é maior de 18 anos?</label>
+            <div id="botoes">
+                <button id="btnsim" onclick="validacao(1)">Sim</button>
+                <button id="btnnao" onclick="validacao(2)">Não</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
